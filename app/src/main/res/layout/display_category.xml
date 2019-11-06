@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:id="@+id/mainLay"
+    android:background="@color/app_back"
+    android:orientation="vertical">
+
+
+  <!--      <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:layout_alignParentTop="true"/>-->
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="55dp"
+        android:id="@+id/mainLay1">
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/tabLay"
+            android:background="@color/app_back"
+            app:tabGravity="center"
+            app:tabMode="scrollable"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <android.support.design.widget.TabItem
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="लोकप्रिय"/>
+            <android.support.design.widget.TabItem
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Live दर्शन"/>
+
+           <!-- <android.support.design.widget.TabItem
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+
+                android:text="गणेश"
+                />-->
+            <android.support.design.widget.TabItem
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="ज्योतिष"/>
+          <!--  <android.support.design.widget.TabItem
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:text="हनुमान"
+                />-->
+            <android.support.design.widget.TabItem
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="वीडियो देखें"/>
+           <!-- <android.support.design.widget.TabItem
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:text="शनिदेव"
+                />-->
+           <!-- <android.support.design.widget.TabItem
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:text="दुर्गा"
+                />-->
+         <!--   <android.support.design.widget.TabItem
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:text="विष्णु"
+                />-->
+           <!-- <android.support.design.widget.TabItem
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:text="आरती"
+                />-->
+          <!--  <android.support.design.widget.TabItem
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:text="मंत्र"
+                />-->
+            <!--<android.support.design.widget.TabItem
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:text="दर्शन"
+                />-->
+           <!-- <android.support.design.widget.TabItem
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:text="भजन"
+                />-->
+            <android.support.design.widget.TabItem
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="धर्म"/>
+
+
+
+          <!--  <android.support.design.widget.TabItem
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:text="कथाएं"
+                />-->
+           <!-- <android.support.design.widget.TabItem
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+
+                android:text="व्रत-त्यौहार"
+                />-->
+
+
+        </android.support.design.widget.TabLayout>
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </LinearLayout>
+
+
+
+<!--    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        app:backgroundTint="#f1b318"
+
+        android:src="@drawable/chat_float"
+        tools:targetApi="lollipop" />-->
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:itemTextColor="@color/app_bhagva"
+        app:itemBackground="@color/app_back"
+        app:itemIconTint="@color/app_bhagva"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu" >
+
+
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>

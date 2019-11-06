@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="adapter_space">#fcfcfb</color>
+    <color name="share_icon_background">#fcfcfb</color>
+    <color name="post_title_name">#dc3413</color>
+    <color name="green">#1db40f</color>
+    <color name="dark_green">#179622</color>
+    <color name="red">#ec3838</color>
+    <color name="app_back">#050505</color>
+    <color name="app_white">#fcfcfb</color>
+    <color name="app_bhagva">#eda333</color>
+    <color name="line">#dee1e1</color>
+    <color name="paytm">#2fe2e2</color>
+    <color name="orange">#ff7601</color>
+    <color name="Darkorange">#cafa4705</color>
+
+
+</resources>

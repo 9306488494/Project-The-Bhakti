@@ -1,0 +1,239 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.thebhakti.Tab14"
+    android:orientation="vertical"
+    android:background="@color/app_back">
+<!--Video article 1-->
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<ImageView
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:id="@+id/chatBanner"
+    android:src="@drawable/chat_banner"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:text="Trending Videos"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/p_n_l"
+        android:textStyle="bold"
+        android:textColor="@color/app_bhagva"
+        android:layout_marginLeft="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_bhagva"/>
+
+    <!--Trending videos list1-->
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:persistentDrawingCache="all"
+        android:id="@+id/list1_rec">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="Popular Videos"
+            android:textSize="20dp"
+            android:fontFamily="@font/p_n_l"
+            android:textColor="@color/app_bhagva"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_bhagva"/>
+
+    <!--Popular Videos list2-->
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:persistentDrawingCache="all"
+        android:layout_marginBottom="5dp"
+
+        android:id="@+id/list2_rec">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:text="Astrology Videos"
+            android:textColor="@color/app_bhagva"
+            android:textSize="20dp"
+            android:fontFamily="@font/p_n_l"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:drawablePadding="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_bhagva"/>
+    <!--Astrology Videos list3-->
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:persistentDrawingCache="all"
+        android:layout_marginBottom="5dp"
+
+        android:id="@+id/list3_rec">
+    </android.support.v7.widget.RecyclerView>
+
+<!--Fb Ads banner-->
+        <LinearLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:text="ज्योतिष विज्ञान "
+            android:textSize="20dp"
+            android:textColor="@color/app_bhagva"
+            android:fontFamily="@font/p_n_l"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/app_bhagva"/>
+            <!--Astrology Images1-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ganesh_recView"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:persistentDrawingCache="all"
+            android:orientation="horizontal">
+        </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:text="Dharam Videos"
+            android:textSize="20dp"
+            android:textColor="@color/app_bhagva"
+            android:fontFamily="@font/p_n_l"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_bhagva"/>
+    <!--Dharam videos list4-->
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:persistentDrawingCache="all"
+        android:id="@+id/list4_rec">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:text="धर्म विशेष"
+            android:textColor="@color/app_bhagva"
+            android:textSize="20dp"
+            android:fontFamily="@font/p_n_l"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/app_bhagva"/>
+    <!--Dharma Images2-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ganesh_recView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:persistentDrawingCache="all"
+
+        android:orientation="horizontal">
+    </android.support.v7.widget.RecyclerView>
+
+            <!--Astrology Images3-->
+           <!-- <android.support.v7.widget.RecyclerView
+                android:id="@+id/ganesh_recView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            </android.support.v7.widget.RecyclerView>-->
+
+
+
+
+            <!--Astrology Images4-->
+           <!-- <android.support.v7.widget.RecyclerView
+                android:id="@+id/ganesh_recView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            </android.support.v7.widget.RecyclerView>-->
+
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

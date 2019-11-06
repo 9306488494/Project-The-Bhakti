@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/privacy32"
+            android:icon="@drawable/privacy322"
+            android:title="Privacy Policy" />
+        <item
+            android:id="@+id/about32"
+            android:icon="@drawable/users"
+            android:title="About" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/share32"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/chat32"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Chat" />
+        </menu>
+    </item>
+
+</menu>

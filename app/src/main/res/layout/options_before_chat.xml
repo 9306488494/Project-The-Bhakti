@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_back"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/app_back">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center">
+         <!--   <ImageView
+                android:layout_width="120dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:src="@drawable/app_logo" />-->
+            <!--  <android.support.v7.widget.CardView
+                  android:layout_width="75dp"
+                  android:layout_height="35dp"
+                  app:cardElevation="5dp"
+                  android:layout_marginLeft="2dp"
+                  android:layout_gravity="center"
+                  app:cardBackgroundColor="@color/app_bhagva"
+                  app:cardCornerRadius="5dp">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/mainWallet"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:text="Rs 0.00"
+                      android:textSize="18dp"
+                      android:textStyle="bold"
+                      android:textColor="@color/app_back"/>
+              </android.support.v7.widget.CardView>-->
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <!--First option for call-->
+    <!--Main Layout-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:weightSum="2">
+        <!--First layout for call-->
+
+     <!--   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_back"
+            android:id="@+id/shareLay"
+            android:padding="5dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardElevation="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/app_white"
+            android:padding="1dp"
+            android:orientation="vertical">
+            &lt;!&ndash;Image and Price for calls&ndash;&gt;
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share_btn"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Share and Got Rs 10"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/app_back"
+                    android:textSize="24dp"/>
+
+            </LinearLayout>
+            &lt;!&ndash;Text of Calling&ndash;&gt;
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="अपने मित्रो व सम्बन्धियों को शेयर करे और पाए तुरंत Rs 10 अपने वॉलेट में"
+                    android:textSize="17dp"
+
+                    android:textColor="@color/app_back"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/callBtn"
+                    android:text="Share Now "
+                    android:background="@color/green"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/app_white"
+                    android:drawableLeft="@drawable/share24"
+                    android:paddingLeft="30dp"
+                    android:textSize="24dp"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>-->
+
+   <!--     &lt;!&ndash;Second layout for call&ndash;&gt;
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_back"
+            android:id="@+id/chatLay"
+            android:layout_marginTop="5dp"
+            android:padding="3dp">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardElevation="6dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/app_white"
+                android:padding="1dp"
+                android:orientation="vertical">
+                &lt;!&ndash;Image and Price for calls&ndash;&gt;
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/chat_logo"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="25 Rs per day"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/app_back"
+                        android:textSize="30dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="First 2 days free"
+                            android:textSize="35dp"
+                            android:textColor="@color/app_back"
+                            android:fontFamily="@font/cursing_write"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                &lt;!&ndash;Text of Calling&ndash;&gt;
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="आचार्य जी से आप चैट के माध्यम से अपने जीवन, पूजा पाठ, व्रत त्यौहार, स्वास्थ, बिज़नेस,करियर और विवाह सम्बंधी जानकारी ले सकते है |"
+                        android:textSize="17dp"
+                        android:textColor="@color/app_back"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/chatBtn"
+                        android:text="Chat Now"
+                        android:background="@color/orange"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/app_white"
+                        android:textSize="25dp"
+                        android:textAllCaps="false"/>
+                </LinearLayout>
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>-->
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

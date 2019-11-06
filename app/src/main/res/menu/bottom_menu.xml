@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+   <!-- <item
+        android:id="@+id/mhome"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/home_menu_nav"
+        android:title="Home"
+        tools:ignore="HardcodedText" />-->
+
+    <item
+        android:id="@+id/mvideos"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/video_menu_nav"
+        android:title="Videos"
+        tools:ignore="HardcodedText" />
+
+    <item android:title="Chat"
+        android:id="@+id/mchat"
+        app:showAsAction="always"
+        android:icon="@drawable/chat_menu"
+        tools:ignore="HardcodedText" />
+
+    <item android:title="Balance" android:id="@+id/mwallet"
+        app:showAsAction="always"
+        android:icon="@drawable/wallet_24"
+        tools:ignore="HardcodedText" />
+</menu>

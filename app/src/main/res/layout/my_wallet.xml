@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/app_white">
+ <FrameLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="220dp"
+     android:background="@drawable/back">
+
+ </LinearLayout>
+
+  <ImageView
+      android:layout_width="160dp"
+      android:layout_height="160dp"
+      android:src="@drawable/wallet_icon"
+      android:layout_gravity="center"
+      android:layout_marginTop="100dp"
+      android:layout_marginBottom="30dp"
+      tools:ignore="ContentDescription" />
+
+ </FrameLayout>
+<!--Scroll-->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <!--Name and Amount module start-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="3dp"
+        android:layout_marginTop="3dp"
+        app:cardBackgroundColor="@color/app_white"
+        app:cardCornerRadius="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/app_white"
+            android:weightSum="3"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="#989b9b"
+                android:text="Guest"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="27dp"
+                android:textStyle="bold"
+                android:textColor="@color/paytm"
+                android:layout_gravity="center"
+                android:text="Rs. 000 /-"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <!--Draw Line-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/line"/>
+    <!-- Call and SMS options-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <!--Module 1-->
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="2dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardBackgroundColor="@color/app_white">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/call_img"
+                    android:contentDescription="Call to Astrologers"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Call"
+                    android:textSize="18dp"
+                    android:textColor="@color/paytm"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--Module 2-->
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            app:cardPreventCornerOverlap="true"
+            app:cardBackgroundColor="@color/app_white">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chat_img"
+                    android:contentDescription="Call to Astrologers"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chat"
+                    android:textSize="18dp"
+                    android:textColor="@color/paytm"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <!--Add Money-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="@color/paytm"
+        android:background="@drawable/ripple_effect"
+        app:cardCornerRadius="8dp">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:foregroundGravity="center"
+          android:src="@drawable/wallet_add"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dp"
+          android:orientation="vertical">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="27dp"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:textStyle="bold"
+              android:text="Add Money"
+              android:textColor="@color/app_white"/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="27dp"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:textStyle="bold"
+              android:text="पैसे जमा करे"
+              android:textColor="@color/app_white"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="14dp"
+              android:textColor="#454646"
+              android:text="आप किसी भी माध्यम से पैसे जमा कर सकते है"/>
+      </LinearLayout>
+
+  </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+ </LinearLayout>
+

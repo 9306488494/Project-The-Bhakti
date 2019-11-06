@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:id="@+id/mainLay"
+    android:background="@color/app_back"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="55dp"
+        android:id="@+id/mainLay1">
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLay"
+        android:background="#da8e13"
+        app:tabGravity="center"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        app:tabMode="scrollable"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <android.support.design.widget.TabItem
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        
+        android:text="New Message"/>
+        <android.support.design.widget.TabItem
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+
+            android:text="History"/>
+    </android.support.design.widget.TabLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

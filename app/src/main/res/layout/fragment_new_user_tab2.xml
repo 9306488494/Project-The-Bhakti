@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.thebhakti.NewUserTab2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#f4a357">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Users for Chat"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:drawableLeft="@drawable/users"
+            android:textColor="#f9fafa"
+            android:padding="3dp"
+            android:drawingCacheQuality="high"
+            android:textStyle="bold"
+            android:background="#f4a357"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/refresh_24"
+            android:layout_marginLeft="45dp"
+            android:id="@+id/refresh"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll"
+        android:scrollbarFadeDuration="0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/chatUserRec2"
+                android:drawingCacheQuality="auto"
+                android:persistentDrawingCache="all"
+                android:animationCache="true"
+                android:layout_marginBottom="5dp"
+                android:scrollbarFadeDuration="1"
+                app:spanCount="20">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+

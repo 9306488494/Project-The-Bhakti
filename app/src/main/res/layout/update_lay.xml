@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="#fcfcfb"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="20dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/update_background"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:id="@+id/up_arrow"
+            android:layout_gravity="center"
+            android:src="@drawable/update_arrow"/>
+
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:drawingCacheQuality="high"
+        android:dividerPadding="10dp"
+        android:persistentDrawingCache="all">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:id="@+id/playstore1"
+        android:src="@drawable/play_store_icon"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/banner2"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:src="@drawable/new_updateimg" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clickUpdate"
+
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:textSize="20dp"
+
+          android:background="@drawable/button_shape"
+            android:textColor="#f9fafa"
+            android:text="अपडेट करे"
+            android:layout_gravity="center"
+            />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:id="@+id/banner1"
+
+                android:layout_gravity="top|right"
+                android:src="@drawable/new_updateimg" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

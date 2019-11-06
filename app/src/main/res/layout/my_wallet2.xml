@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/app_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/app_back">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_logo"/>
+    </LinearLayout>
+
+    <!--Details of User Image,Name and Mobile-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/userName"
+                    android:text="Loading..."
+                    android:textSize="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/app_bhagva"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/userMob"
+                    android:text="Loading..."
+                    android:textSize="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/app_bhagva"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:gravity="center">
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="6dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardBackgroundColor="@color/app_white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/userAmount"
+                    android:text="Rs 0.00 /-"
+                    android:textSize="35dp"
+                    android:layout_marginRight="3dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/app_bhagva"/>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+
+        <!--Draw Line-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#5c6666"/>
+    </LinearLayout>
+
+    <!--Recharge Packs Row 1-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/app_white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="5dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recharge Wallet"
+                android:textSize="30dp"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:textColor="#122"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#de8328"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="3dp"
+            app:cardCornerRadius="8dp">
+           <!-- <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn25"
+                android:drawableLeft="@drawable/coins"
+                android:background="@color/app_bhagva"
+                android:text="Rs 30 /- "/>-->
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#de8328"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="3dp"
+            app:cardCornerRadius="8dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn50"
+                android:drawableLeft="@drawable/coins"
+                android:background="@color/app_bhagva"
+                android:text="Rs 51 /-  "/>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#de8328"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="3dp"
+            app:cardCornerRadius="8dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn100"
+                android:drawableLeft="@drawable/coins"
+                android:background="@color/app_bhagva"
+                android:text="Rs 100 /-"/>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <!--Recharge Packs Row 2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#de8328"
+            android:layout_marginLeft="5dp"
+            app:cardCornerRadius="8dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn250"
+                android:drawableLeft="@drawable/coins"
+                android:background="@color/app_bhagva"
+                android:text="Rs 250 /-"/>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#de8328"
+            android:layout_marginLeft="5dp"
+            app:cardCornerRadius="8dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn500"
+                android:background="@color/app_bhagva"
+                android:drawableLeft="@drawable/coins"
+                android:text="Rs 500 /-"/>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#de8328"
+            android:layout_marginLeft="5dp"
+            app:cardCornerRadius="8dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn1000"
+                android:background="@color/app_bhagva"
+                android:drawableLeft="@drawable/coins"
+                android:text="Rs 1000 /-"/>
+        </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="7dp"
+        app:cardBackgroundColor="@color/app_white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+        <!--<EditText
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/manualAMT"
+            android:textColor="@color/app_back"
+            android:hint="Amount"
+            android:maxLength="4"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:textSize="22dp"/>-->
+      <!--  <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceed..."
+            android:id="@+id/btnManual"
+            android:background="@color/app_bhagva"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>-->
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

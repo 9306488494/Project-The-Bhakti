@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Main Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/continueLay"
+        android:gravity="center"
+        android:background="@color/app_back"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <!--Now create box-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/app_white"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:text="Wallet Balance"
+                    android:textColor="@color/app_back"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/balanceTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="@font/arial"
+                    android:gravity="center"
+                    android:text="Rs 0.00 "
+                    android:textColor="@color/orange"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/arial"
+                    android:text="By proceeding further,an amount will be deducted from your wallet account accordingly :"
+                    android:textColor="@color/app_back"
+                    android:textSize="15dp" />
+                <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/normal_fair2"
+            android:textColor="@color/app_back"
+            android:text="Call Charges : 10 Rs per min."/>-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Chat Charges : 25 Rs per day."
+                    android:textColor="@color/app_back"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/rechargeBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/orange"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Recharge Now"
+                        android:textColor="@color/app_white"
+                        android:textSize="25dp" />
+
+                    <Button
+                        android:id="@+id/continueBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/green"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Continue..."
+                        android:textColor="@color/app_white"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <!--Mobile no enter Layout-->
+ <!--   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mobenterLay"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@color/app_back"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_white"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Before call please enter your mobile no to connect call to Astrologers"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/app_back"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/mobno"
+    android:background="@color/app_white"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:ems="10"
+    android:maxLength="10"
+    android:inputType="number"
+    android:textSize="20dp"
+    android:hint="Enter 10 digit Mobile Number"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/connectCall"
+        android:background="@color/green"
+        android:textColor="@color/app_white"
+        android:text="Connect My Call"
+        android:textSize="20dp"/>
+</LinearLayout>
+
+
+    </LinearLayout>-->
+
+</LinearLayout>

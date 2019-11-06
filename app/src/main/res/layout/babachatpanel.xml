@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layTop"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chatUser"
+        android:background="#f4a357"
+        android:fontFamily="@font/p_n_l"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+       android:drawableLeft="@drawable/chat_user"
+        android:textColor="#f9fafa"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layTop"
+        android:layout_above="@+id/typerLay"
+        android:layout_centerInParent="true"
+        android:persistentDrawingCache="all"
+        android:id="@+id/MyRec">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:id="@+id/typerLay"
+        android:outlineProvider="background"
+        android:background="#f4a357"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:background="#f4a357"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:id="@+id/txtMsg"
+            android:backgroundTint="#fbfcfc"
+            android:background="@drawable/shape_textbox"
+            android:hint="Enter Message" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/msgSend"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/message_send"
+            android:contentDescription="TODO" />
+    </LinearLayout>
+
+</RelativeLayout>

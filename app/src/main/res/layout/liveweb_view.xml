@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_back">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:background="@color/app_bhagva">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:textSize="20dp"
+           android:textStyle="bold"
+           android:text="Live दर्शन"/>
+
+   </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="18dp"
+        android:gravity="center"
+        android:id="@+id/txtTitle"
+        android:fontFamily="@font/p_n_l"
+        android:textSize="18dp"
+        android:lines="1"
+        android:textColor="@color/app_white"/>
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/webView">
+
+    </WebView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="18dp"
+        android:id="@+id/txtDesc"
+        android:gravity="center"
+        android:fontFamily="@font/p_n_l"
+        android:textSize="18dp"
+        android:lines="1"
+        android:textColor="@color/app_white"/>
+
+</LinearLayout>

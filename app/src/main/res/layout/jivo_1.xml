@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="84dp"
+        android:id="@+id/logo"
+        android:src="@drawable/app_logo"
+        android:scaleType="fitCenter"
+        android:layout_above="@+id/chat_with"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Begin Chat"
+        android:id="@+id/begin_chat"
+        android:password="false"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="23dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/chat_with"
+        android:textAlignment="center"
+        android:text="Chat with"
+        android:gravity="center_horizontal"
+        android:textSize="14dp"
+        android:textIsSelectable="true"
+        android:layout_above="@+id/begin_chat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/made_with"
+        android:textAlignment="center"
+        android:text="made with"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/with_sdk"
+        android:layout_centerHorizontal="true"
+        android:textSize="14dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/with_sdk"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:text="Prabhu Bhakti"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="14dp" />
+
+</RelativeLayout>

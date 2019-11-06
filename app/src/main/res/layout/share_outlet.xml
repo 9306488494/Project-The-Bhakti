@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:src="@drawable/share_banner"/>
+    </LinearLayout>
+    <!--Image Code Finish-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You have shared"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/app_back"/>
+        <!--Points layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="0"
+                android:textColor="@color/app_back"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_back"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:text="1"
+                android:textSize="15dp"/>
+        </LinearLayout>
+        <!--Progress Bar Image-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prgressImg"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/bar_0"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/walletCash"
+            android:text="Wallet Balance : 0"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:textSize="17dp"
+            android:fontFamily="@font/arial"/>
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="---------------------------------------------------------------------"
+       android:gravity="center"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Invite your friends to Prabhu Bhakti"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/app_back"/>
+
+      <!--  <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="अपने 1 Whatsapp group में शेयर करे
+ और Free में आचार्य जी से पूछें सवाल
+ और पाइये समस्याओं का सही समाधान"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:layout_marginBottom="@dimen/dimen_15dp"
+            android:textColor="@color/app_back"/>-->
+
+       <!-- <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shareBtn"
+            android:layout_gravity="bottom"
+            app:cardElevation="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="6dp"
+            app:cardBackgroundColor="@color/green">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/whatsappShare"
+                android:text="Share On Whatsapp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:layout_marginLeft="15dp"
+                android:background="@color/green"
+                android:textColor="@color/app_white"
+                android:textSize="20dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:drawableLeft="@drawable/whats_share"
+                android:drawablePadding="10dp"
+                android:padding="5dp" />
+        </android.support.v7.widget.CardView>-->
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/app_back">
+    <!--Title and Action Bar-->
+ <!--   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#da8e13"
+        android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="22dp"
+    android:gravity="center_horizontal|center_vertical"
+    android:textAlignment="center"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:foregroundGravity="center_horizontal|center_vertical"
+    android:text="वीडियो देखे"/>
+    </LinearLayout>-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+       android:backgroundTintMode="screen"
+        android:background="@color/app_back"
+        android:layout_marginTop="3dp"
+        android:id="@+id/bhaktiPlayer1">
+    </com.google.android.youtube.player.YouTubePlayerView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/p_n_l"
+        android:textAppearance="@font/p_n_l"
+        android:textIsSelectable="true"
+        android:layout_marginLeft="5dp"
+
+        android:id="@+id/videoTitle"/>
+    <!--Sharing options start from here-->
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="#fafafa"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"
+        app:cardElevation="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:saveEnabled="true"
+            android:focusable="true"
+            android:background="@color/app_back"
+            android:orientation="horizontal">
+           <!-- <ImageView
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:id="@+id/whatsap"
+                android:src="@drawable/whats_share"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:id="@+id/fb"
+                android:src="@drawable/fb_share"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription" />-->
+            <!--     <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="25dp"
+                     android:layout_weight="1"
+                     android:id="@+id/comment"
+                     android:autofillHints="Comments"
+                     android:src="@drawable/comment"
+                     android:contentDescription="
+                 &lt;!&ndash;-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:layout_gravity="center|left"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/eyes"
+                    android:layout_gravity="center"
+                    android:id="@+id/viewtab1"
+                    android:foregroundGravity="right"/>
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="12dp"
+                    android:layout_gravity="center"
+                    android:persistentDrawingCache="all"
+                    app:cardBackgroundColor="@color/app_back"
+                    app:cardCornerRadius="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/likes"
+                        android:textSize="16dp"
+                        android:padding="3dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/app_bhagva"/>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/like"
+                    android:layout_gravity="center"
+                    android:id="@+id/likeMe"
+                    android:foregroundGravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:id="@+id/hearts"
+                    android:textColor="@color/app_bhagva"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+
+            <!--     <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/like"
+                     android:layout_gravity="right"
+                     android:layout_weight="1"
+                     android:id="@+id/like"
+                     android:foregroundGravity="right"
+                     android:layout_marginLeft="25dp"/>
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:src="@drawable/eyes"
+                     android:layout_weight="1"
+                     android:layout_gravity="center"
+                     android:id="@+id/views"
+                     android:foregroundGravity="right"
+                     android:layout_marginLeft="25dp"/> &ndash;&gt;-->
+            <ImageView
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="25dp"
+
+                android:layout_weight="1"
+
+                android:foregroundGravity="center"
+                android:id="@+id/comment"
+                android:autofillHints="Comments here "
+                android:src="@drawable/comment"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <!--  Sharing Option above-->
+    <!--Comment box-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comentTxt"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recComment"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#f4a357"
+
+            android:layout_weight="5">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:layout_weight="4">
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/enterCmnt"
+                    android:backgroundTint="@color/app_white"
+                    android:background="@drawable/comment_box"
+                    android:hint="                       कमेंट करे"
+                    android:textColor="@color/app_back"
+                    />
+
+            </FrameLayout>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="POST"
+                android:textColor="@color/app_white"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:backgroundTint="#49569e"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/btn_shape"
+                android:foregroundGravity="center"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/btnPost"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <!--FB ads start from here-->
+            <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"/>
+            <!---->
+
+            <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Related Videos "
+           android:textSize="22dp"
+           android:fontFamily="@font/p_n_l"
+           android:textColor="@color/green"
+           android:textStyle="bold"
+           android:layout_marginBottom="5dp"/>
+    </GridLayout>
+            <android.support.v7.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="600dp"
+      android:id="@+id/Rel_video"
+      android:persistentDrawingCache="all"
+      android:layout_marginTop="5dp">
+  </android.support.v7.widget.RecyclerView>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@color/app_back">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:persistentDrawingCache="all"
+        app:cardBackgroundColor="#fafafa"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+
+        app:cardPreventCornerOverlap="true">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="230dp"
+            android:layout_gravity="center"
+            android:background="@color/app_back"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--  <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">-->
+            <com.google.android.youtube.player.YouTubeThumbnailView
+                android:id="@+id/ImgVideo"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+
+                android:focusable="true" />
+            <!--  <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/video_icon"/>-->
+            <!--     </FrameLayout>-->
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp">-->
+            <!--Video icon image on playlists-->
+
+            <TextView
+                android:id="@+id/videoDesc"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/p_n_l"
+                android:gravity="left"
+                android:lines="3"
+                android:maxLength="60"
+                android:text="Loading..."
+
+                android:textColor="@color/app_white"
+                android:textSize="16dp" />
+        </LinearLayout>
+        <!--   <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/video_sign"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"/>-->
+
+
+        <!-- </LinearLayout>-->
+
+
+    </android.support.v7.widget.CardView>
+    <!-- <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/shareMe"
+         android:layout_gravity="right"
+         android:src="@drawable/share_btn"/>-->
+
+</LinearLayout>
